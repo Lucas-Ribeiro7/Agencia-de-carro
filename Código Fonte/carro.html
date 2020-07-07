@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carro.css">
+    <title>Agência do carro</title>
+</head>
+<body>
+    <form method="POST" action="calculo.php">
+        Valor do carro: <input type="number" name="valor" value="valor"><br>
+        Ano do carro: <input type="number" name="ano" value="anoCarro"><br>
+        <input type="radio" name="seguro" value="segurado"> <label for="segurado">O carro tem seguro</label>
+        <input type="radio" name="seguro" value="nao_segurado"> <label for="nao_segurado">O carro não tem seguro</label>
+        <br>
+        Qual a Quilometragem do carro: <input type="number" name="km" value="km">
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+        <p><strong>Obs:</strong> os carros que tem 0KM o seguro tem um acrécimo de 10%</p>
+    
+    </form>   
+
+</body>
+</html>
